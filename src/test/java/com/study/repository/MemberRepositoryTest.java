@@ -22,13 +22,13 @@ class MemberRepositoryTest {
     @DisplayName("회원 객체 등록 테스트")
     void insertMemberTest() {
         // given
-        Member member = Member.builder().id("id1").username("초원").age(26).build();
+        Member member = Member.builder().username("현호").age(25).build();
 
         // when
         Member saveMember = memberRepository.save(member);
 
         // then
-        assertEquals(saveMember.getUsername(), "초원");
+        assertEquals(saveMember.getUsername(), "현호");
     }
 
     @Test
