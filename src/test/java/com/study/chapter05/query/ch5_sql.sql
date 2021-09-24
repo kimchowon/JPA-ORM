@@ -1,0 +1,15 @@
+-- 테스트하기 전 H2 데이터베이스 내의 모든 테이블들을 일괄 삭제
+drop all objects;
+
+CREATE TABLE Ch03_TEAM (
+    TEAM_ID VARCHAR(255) NOT NULL,
+    NAME VARCHAR(255),
+    PRIMARY KEY (TEAM_ID)
+);
+
+CREATE TABLE Ch03_MEMBER (
+    MEMBER_ID VARCHAR(255) NOT NULL,
+    TEAM_ID VARCHAR(255),
+    USERNAME VARCHAR(255),
+    PRIMARY KEY (MEMBER_ID)
+);

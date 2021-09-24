@@ -1,7 +1,13 @@
 com/study/JpaStudyApplication.java
  com.study.JpaStudyApplication
-com/study/repository/MemberRepository.java
- com.study.repository.MemberRepository
-com/study/entity/Member.java
- com.study.entity.Member
- com.study.entity.Member$MemberBuilder
+com/study/chapter03/entity/Member.java
+ com.study.chapter03.entity.Member
+ com.study.chapter03.entity.Member$MemberBuilder
+com/study/chapter03/repository/MemberRepository.java
+ com.study.chapter03.repository.MemberRepository
+com/study/chapter05/repository/TeamRepository.java
+ com.study.chapter05.repository.TeamRepository
+com/study/chapter05/entity/Ch03Team.java
+ com.study.chapter05.entity.Ch03Team
+com/study/chapter05/entity/Ch03Member.java
+ com.study.chapter05.entity.Ch03Member
