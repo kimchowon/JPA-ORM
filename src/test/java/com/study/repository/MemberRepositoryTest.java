@@ -1,6 +1,7 @@
 package com.study.repository;
 
-import com.study.entity.Member;
+import com.study.chapter03.entity.Member;
+import com.study.chapter03.repository.MemberRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
