@@ -95,7 +95,7 @@ public class TwoWayMappingTest {
     }
 
     @Test
-    @DisplayName("연관된 엔티티 삭제")
+    @DisplayName("팀 정보 삭제 - 회원 정보와 매핑되어 있는 경우")
     void deleteMappedEntityTest() {
         // 연관된 엔티티를 삭제하려면 기존에 있던 연관관계를 모두 제거하고 삭제해야 함.
         // 그렇지 않으면 외래키 제약조건으로 인해 데이터베이스에서 오류 발생
