@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "Ch05_TEAM")
@@ -28,5 +29,16 @@ public class Ch05Team {
     public Ch05Team(String id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    /**
+     * 팀 정보를 영속성 컨텍스트에서 삭제하기 직전에 호출
+     * 팀과 회원의 연관관계를 제거
+     */
+    @PreRemove
+    public void dismissMember() {
+        for (Ch05Member member : memberList) {
+            member.setTeam(null);
+        }
     }
 }

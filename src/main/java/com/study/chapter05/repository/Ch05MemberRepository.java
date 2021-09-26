@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Ch05MemberRepository extends JpaRepository<Ch05Member, String> {
+
 }

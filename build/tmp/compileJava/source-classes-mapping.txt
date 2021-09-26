@@ -3,13 +3,13 @@ com/study/chapter03/entity/Member.java
  com.study.chapter03.entity.Member$MemberBuilder
 com/study/chapter03/repository/MemberRepository.java
  com.study.chapter03.repository.MemberRepository
-com/study/chapter05/entity/Ch05Team.java
- com.study.chapter05.entity.Ch05Team
-com/study/JpaStudyApplication.java
- com.study.JpaStudyApplication
-com/study/chapter05/entity/Ch05Member.java
- com.study.chapter05.entity.Ch05Member
-com/study/chapter05/repository/Ch05MemberRepository.java
- com.study.chapter05.repository.Ch05MemberRepository
 com/study/chapter05/repository/Ch05TeamRepository.java
  com.study.chapter05.repository.Ch05TeamRepository
+com/study/JpaStudyApplication.java
+ com.study.JpaStudyApplication
+com/study/chapter05/repository/Ch05MemberRepository.java
+ com.study.chapter05.repository.Ch05MemberRepository
+com/study/chapter05/entity/Ch05Team.java
+ com.study.chapter05.entity.Ch05Team
+com/study/chapter05/entity/Ch05Member.java
+ com.study.chapter05.entity.Ch05Member

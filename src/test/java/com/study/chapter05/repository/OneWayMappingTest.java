@@ -49,7 +49,7 @@ class OneWayMappingTest {
             Ch05Team team = member.getTeam();
             log.debug("조회 성공!, team name = {}", team.getName());
         } else {
-            log.debug("조회 실패!, member is null");
+            log.debug("조회 실패!, 회원 정보 비어 있음");
         }
     }
 
@@ -70,7 +70,7 @@ class OneWayMappingTest {
 
             log.debug("회원 정보 업데이트 성공");
         } else {
-            log.debug("회원 정보 is null");
+            log.debug("회원 정보 비어 있음");
         }
     }
 
@@ -86,7 +86,7 @@ class OneWayMappingTest {
             memberRepository.save(member);
             log.debug("연관관계 제거 성공");
         } else {
-            log.debug("회원 정보 is null");
+            log.debug("회원 정보 비어 있음");
         }
     }
 }
