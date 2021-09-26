@@ -5,10 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter @Setter
@@ -22,4 +21,12 @@ public class Ch05Team {
     private String id;
 
     private String name;
+
+    @OneToMany(mappedBy = "team") // 양방향 연관관계 설정
+    private List<Ch05Member> memberList = new ArrayList<>();
+
+    public Ch05Team(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

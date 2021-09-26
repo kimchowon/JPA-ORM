@@ -12,8 +12,8 @@ import java.util.Optional;
 
 @Slf4j
 @SpringBootTest
-@DisplayName("연관관계 매핑 테스트")
-class TeamRepositoryTest {
+@DisplayName("단방향 연관관계 매핑 테스트")
+class OneWayMappingTest {
 
     @Autowired
     private Ch05TeamRepository teamRepository;
